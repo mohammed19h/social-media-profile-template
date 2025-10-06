@@ -1,0 +1,224 @@
+@import url(https://fonts.google.com/specimen/Inter);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green-fc: hsl(75, 94%, 57%);
+    --font-color: hsl(0, 0%, 100%);
+    --transparnt: hsl(0, 0%, 20%);
+    --bg-color2: hsl(0, 0%, 12%);
+    --bg-color1: hsl(0, 0%, 8%);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    background-color: var(--bg-color1);
+}
+
+main {
+    margin: 10em 25em;
+    padding: 20px;
+    color: var(--font-color);
+}
+
+section {
+    margin-bottom: 10em;
+    background-color: var(--transparnt);
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    padding: 16px;
+}
+
+.name h2 {
+    padding: 10px 1px 1px 1px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.bio {
+    padding: 1px 1px 16px 1px;
+    text-align: center;
+    color: var(--green-fc);
+    font-size: 16px;
+}
+
+.info h5 {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #666;
+    border-radius: 15px;
+    background-color: hsla(0, 1%, 29%, 0.644);
+    width: 30vw;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+}
+
+a:active,
+a:visited {
+    color: var(--font-color);
+}
+
+a:hover,
+a:focus {
+    color: var(--bg-color2);
+    background-color: var(--green-fc);
+}
+
+.social-links {
+    padding: 15px 1px;
+}
+
+
+/* ------- Small Mobile Version ------- */
+
+@media screen and (max-width: 374px) {
+
+    body {
+        height: 100vh;
+    }
+
+    main {
+        margin: auto;
+    }
+
+    .profile-pic img {
+        width: 180px;
+    }
+
+    a {
+        width: 290px;
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .info h5 {
+        font-size: 14.5px;
+    }
+}
+
+/* ------- Large Mobile Version ------- */
+
+@media screen and (min-width: 375px) {
+
+    body {
+        height: 100vh;
+    }
+
+    main {
+        margin: 10em auto;
+    }
+
+    .profile-pic img {
+        width: 180px;
+    }
+
+    a {
+        width: 310px;
+        font-size: 20px;
+    }
+
+    .name h2 {
+        font-size: 26px;
+    }
+
+    .info h5 {
+        font-size: 16px;
+    }
+}
+
+/* ------- Small Destop Version ------- */
+/* 
+@media screen and (max-width: 1350px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        margin: 10em 25em;
+    }
+
+    .profile-pic img {
+        width: 208;
+    }
+} */
+
+
+/* ------- Large Destop Version ------- */
+
+@media screen and (min-width: 1350px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        margin: 10em 25em;
+    }
+
+    .profile-pic img {
+        width: 208;
+    }
+
+    .name h2 {
+        font-size: 28px;
+    }
+
+    a {
+        width: 400px;
+        font-size: 24px;
+    }
+
+    .info h5 {
+        font-size: 20px;
+    }
+}
+
+/* ------ Large Desktop Version ------  */
+
+@media screen and (min-width: 1440px) {
+    body {
+        height: 100vh;
+    }
+
+    a {
+        width: 500px;
+        font-size: 26px;
+    }
+
+    .name h2 {
+        font-size: 32px;
+    }
+
+    .bio {
+        font-size: 21px;
+    }
+
+    .info h5 {
+        font-size: 22px;
+    }
+}
